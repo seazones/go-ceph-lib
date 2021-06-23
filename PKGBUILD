@@ -28,7 +28,9 @@ noextract=()
 prepare() {
   mkdir ${pkgname}-${pkgver}
   cd ${pkgname}-${pkgver}
-  rpmextract.sh  "../librados-devel-${pkgver}-0.el7.x86_64.rpm" "../librbd-devel-${pkgver}-0.el7.x86_64.rpm" "../libcephfs-devel-${pkgver}-0.el7.x86_64.rpm"
+  rpmextract.sh  "../librados-devel-${pkgver}-0.el7.x86_64.rpm" 
+  rpmextract.sh  "../librbd-devel-${pkgver}-0.el7.x86_64.rpm" 
+  rpmextract.sh  "../libcephfs-devel-${pkgver}-0.el7.x86_64.rpm"
 }
 
 package() {
